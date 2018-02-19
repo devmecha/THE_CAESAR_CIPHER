@@ -2,7 +2,7 @@ import math
 import re
 
 status =''
-S = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!?.'
+S = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
 l = len(S)
 
 def validate_status():
@@ -32,8 +32,7 @@ def caesar_cipher_enc (msg, k, l, S, status):
 		else :
 			msg_encypted += c 
 
-	print(msg_encypted)
-	print('Done')
+	# print(msg_encypted)
 	return msg_encypted
 
 def Main():
